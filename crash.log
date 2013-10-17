@@ -1,0 +1,211 @@
+Crashlog created at 2013-10-17 12:36:35 -0500
+
+===== MESSAGE:
+
+Errno::EACCES: Permission denied - /var/www/index.html
+
+===== COMPILATION STACK:
+
+  - [item]   / (rep default)
+
+===== STACK TRACE:
+
+  0. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/fileutils.rb:1371:in `initialize'
+  1. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/fileutils.rb:1371:in `open'
+  2. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/fileutils.rb:1371:in `block in copy_file'
+  3. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/fileutils.rb:1370:in `open'
+  4. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/fileutils.rb:1370:in `copy_file'
+  5. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/fileutils.rb:477:in `copy_file'
+  6. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/fileutils.rb:396:in `block in cp'
+  7. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/fileutils.rb:1515:in `block in fu_each_src_dest'
+  8. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/fileutils.rb:1531:in `fu_each_src_dest0'
+  9. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/fileutils.rb:1513:in `fu_each_src_dest'
+  10. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/fileutils.rb:395:in `cp'
+  11. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/base/result_data/item_rep.rb:146:in `write'
+  12. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/base/result_data/item_rep.rb:432:in `snapshot'
+  13. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/base/compilation/compiler.rb:386:in `compile_rep'
+  14. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/base/compilation/compiler.rb:340:in `block in compile_reps'
+  15. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/base/compilation/compiler.rb:333:in `loop'
+  16. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/base/compilation/compiler.rb:333:in `compile_reps'
+  17. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/base/compilation/compiler.rb:89:in `run'
+  18. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  19. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/cli/commands/compile.rb:363:in `block in run'
+  20. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/cli/commands/compile.rb:404:in `run_listeners_while'
+  21. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/cli/commands/compile.rb:362:in `run'
+  22. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  23. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  24. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  25. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/cli/command_runner.rb:13:in `call'
+  26. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/cri-2.4.0/lib/cri/command_dsl.rb:185:in `block in runner'
+  27. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/cri-2.4.0/lib/cri/command.rb:296:in `call'
+  28. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/cri-2.4.0/lib/cri/command.rb:296:in `run_this'
+  29. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/cri-2.4.0/lib/cri/command.rb:249:in `run'
+  30. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/cri-2.4.0/lib/cri/command.rb:262:in `run'
+  31. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/cli.rb:52:in `block in run'
+  32. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  33. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  34. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib/nanoc/cli.rb:50:in `run'
+  35. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/bin/nanoc:19:in `<top (required)>'
+  36. /home/developer/.rvm/gems/ruby-1.9.3-p429/bin/nanoc:19:in `load'
+  37. /home/developer/.rvm/gems/ruby-1.9.3-p429/bin/nanoc:19:in `<main>'
+  38. /home/developer/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `eval'
+  ... 41 more lines omitted. See full crash log for details.
+
+===== VERSION INFORMATION:
+
+nanoc 3.6.5 © 2007-2013 Denis Defreyne.
+Running ruby 1.9.3 (2013-05-15) on x86_64-linux with RubyGems 1.8.25.
+
+===== SYSTEM INFORMATION:
+
+Linux glb7239 3.2.0-23-generic #36-Ubuntu SMP Tue Apr 10 20:39:51 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux
+
+===== INSTALLED GEMS:
+
+  CFPropertyList 2.0.17
+  Platform 0.4.0
+  ansi 1.3.0
+  archive-tar-minitar 0.5.2
+  bigdecimal 1.1.0
+  builder 3.2.0, 3.2.2
+  bundler 1.3.5
+  childprocess 0.3.9
+  colored 1.2
+  cri 2.4.0
+  cucumber 1.3.1, 1.3.2
+  diff-lcs 1.2.4
+  erubis 2.7.0
+  excon 0.22.1, 0.23.0
+  facter 1.7.1
+  ffi 1.8.1, 1.9.0
+  fission 0.4.0
+  fog 1.9.0
+  formatador 0.2.4
+  gherkin 2.12.0
+  grit 2.5.0
+  highline 1.6.19
+  i18n 0.6.4
+  io-console 0.3
+  json 1.5.5
+  kramdown 1.2.0
+  librarian-puppet 0.9.9
+  libxml-ruby 2.6.0
+  log4r 1.1.10
+  mime-types 1.23
+  minitest 2.5.1
+  multi_json 1.7.3, 1.7.4, 1.7.6
+  nanoc 3.6.5
+  net-scp 1.0.4
+  net-ssh 2.2.2
+  nokogiri 1.5.9, 1.5.10
+  open4 1.3.0
+  popen4 0.1.2
+  posix-spawn 0.3.6
+  progressbar 0.20.0
+  rake 0.9.2.2, 10.0.4
+  rdoc 3.9.5
+  rspec 2.13.0
+  rspec-core 2.13.1
+  rspec-expectations 2.13.0
+  rspec-mocks 2.13.1
+  ruby-hmac 0.4.0
+  ruby-vnc 1.0.1
+  rubygems-bundler 1.1.1
+  rvm 1.11.3.7
+  thor 0.18.1
+  vagrant 1.0.5
+  veewee 0.3.7
+
+===== ENVIRONMENT:
+
+ALL_PROXY => "socks://172.26.97.251:3128/"
+ANT_OPTS => "-Dhttp.proxyHost=172.26.97.251  -Dhttp.proxyPort=3128"
+CATALINA_HOME => "/opt/tomcat"
+CLASSPATH => "/opt/iona/asp6.3.4/asp/6.3/lib/asp-corba.jar:/opt/orbixetc/domains/CS-SS-1.0::"
+COLORTERM => "mate-terminal"
+DBUS_SESSION_BUS_ADDRESS => "unix:abstract=/tmp/dbus-9SG1un7Dzx,guid=82de94dfe2e281ea9f65f7c900000079"
+DEFAULTS_PATH => "/usr/share/gconf/mate.default.path"
+DESKTOP_SESSION => "mate"
+DISPLAY => ":0.0"
+GDMSESSION => "mate"
+GEM_HOME => "/home/developer/.rvm/gems/ruby-1.9.3-p429"
+GEM_PATH => "/home/developer/.rvm/gems/ruby-1.9.3-p429:/home/developer/.rvm/gems/ruby-1.9.3-p429@global"
+GNOME_KEYRING_CONTROL => "/tmp/keyring-d3VjQR"
+GNOME_KEYRING_PID => "5728"
+GRADLE_HOME => "/opt/gradle/latest"
+GRADLE_OPTS => "-Xdebug -Xrunjdwp:transport=dt_socket,address=9999,server=y,suspend=n -Dhttp.proxyHost=172.26.97.251 -Dhttp.proxyPort=3128"
+GRAILS_HOME => "/opt/grails/latest"
+GROOVY_HOME => "/opt/groovy/latest"
+HOME => "/home/developer"
+IRBRC => "/home/developer/.rvm/rubies/ruby-1.9.3-p429/.irbrc"
+IT_CONFIG_DOMAINS_DIR => "/opt/orbixetc/domains"
+IT_DOMAIN_NAME => "CS-SS-1.0"
+IT_LICENSE_FILE => "/opt/iona/etc/licenses.txt"
+IT_PRODUCT_DIR => "/opt/iona/asp6.3.4"
+JAVA_HOME => "/opt/java/latest"
+JDK_HOME => "/opt/java/latest"
+LANG => "en_US.UTF-8"
+LANGUAGE => "en_US:en"
+LD_LIBRARY_PATH => "/opt/iona/asp6.3.4/shlib:/opt/iona/asp6.3.4/shlib/default:/opt/iona/asp6.3.4/shlib/lib64:/opt/iona/asp6.3.4/shlib/default/lib64:/opt/java/java-6-openjdk/jre/lib/i386:/opt/java/java-6-openjdk/jre/lib/i386/server:"
+LD_LIBRARY_PATH_64 => "/opt/iona/asp6.3.4/shlib/lib64:/opt/iona/asp6.3.4/shlib/default/lib64:/opt/iona/asp6.3.4/shlib:/opt/iona/asp6.3.4/shlib/default:"
+LESSCLOSE => "/usr/bin/lesspipe %s %s"
+LESSOPEN => "| /usr/bin/lesspipe %s"
+LIBGL_DRIVERS_PATH => "/usr/lib/fglrx/dri:/usr/lib32/fglrx/dri"
+LOGNAME => "developer"
+LS_COLORS => "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:"
+MANDATORY_PATH => "/usr/share/gconf/mate.mandatory.path"
+MATE_DESKTOP_SESSION_ID => "this-is-deprecated"
+MAVEN_HOME => "/opt/maven3"
+MY_RUBY_HOME => "/home/developer/.rvm/rubies/ruby-1.9.3-p429"
+NO_PROXY => "localhost,127.0.0.0/8,*.swacorp.com,*.swalifeqa.com"
+NSS_SSL_CBC_RANDOM_IV => "0"
+OLDPWD => "/home/developer/Documents"
+PATH => "/home/developer/.rvm/gems/ruby-1.9.3-p429/bin:/home/developer/.rvm/gems/ruby-1.9.3-p429@global/bin:/home/developer/.rvm/rubies/ruby-1.9.3-p429/bin:/home/developer/.rvm/bin:/home/developer/bin:/opt/firefox-10/firefox:/opt/iona/asp6.3.4/asp/6.3/bin:/opt/orbixetc/bin:/opt/ant/bin:/opt/gradle/latest/bin:/opt/grails/latest/bin:/opt/java/latest/bin:/opt/maven3/bin:/opt/maven2/bin:/opt/firefox3:/home/developer/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
+PWD => "/home/developer/Documents/myblog"
+QA_ROOT => "~/work/commerce-git/commerce-project/web-functional/src/test"
+RUBY_VERSION => "ruby-1.9.3-p429"
+SESSION_MANAGER => "local/glb7239:@/tmp/.ICE-unix/5739,unix/glb7239:/tmp/.ICE-unix/5739"
+SHELL => "/bin/bash"
+SHLVL => "1"
+SSH_AGENT_PID => "5776"
+SSH_AUTH_SOCK => "/tmp/ssh-mXTlrfLN5739/agent.5739"
+TERM => "xterm"
+UBUNTU_MENUPROXY => "libappmenu.so"
+USER => "developer"
+WINDOWID => "52429329"
+XAUTHORITY => "/home/developer/.Xauthority"
+XDG_CONFIG_DIRS => "/etc/xdg/xdg-mate:/etc/xdg"
+XDG_DATA_DIRS => "/usr/share/mate:/usr/local/share/:/usr/share/"
+XDG_SEAT_PATH => "/org/freedesktop/DisplayManager/Seat0"
+XDG_SESSION_COOKIE => "191eb6bf02eadc7a6a5528db0000000e-1381926231.593689-74425615"
+XDG_SESSION_PATH => "/org/freedesktop/DisplayManager/Session0"
+_ => "/home/developer/.rvm/gems/ruby-1.9.3-p429/bin/nanoc"
+_ORIGINAL_GEM_PATH => "/home/developer/.rvm/gems/ruby-1.9.3-p429:/home/developer/.rvm/gems/ruby-1.9.3-p429@global"
+all_proxy => "socks://172.26.97.251:3128/"
+ftp_proxy => "ftp://172.26.97.251:3128/"
+http_proxy => "http://172.26.97.251:3128"
+https_proxy => "https://172.26.97.251:3128/"
+no_proxy => "localhost,127.0.0.0/8,*.swacorp.com,*.swalifeqa.com"
+rvm_bin_path => "/home/developer/.rvm/bin"
+rvm_path => "/home/developer/.rvm"
+rvm_prefix => "/home/developer"
+rvm_version => "1.20.10 (stable)"
+socks_proxy => "socks://172.26.97.251:3128/"
+
+===== LOAD PATHS:
+
+  0. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib
+  1. /home/developer/.rvm/gems/ruby-1.9.3-p429@global/gems/rubygems-bundler-1.1.1/lib
+  2. /home/developer/.rvm/gems/ruby-1.9.3-p429@global/gems/bundler-1.3.5/lib
+  3. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/colored-1.2/lib
+  4. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/cri-2.4.0/lib
+  5. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/nanoc-3.6.5/lib
+  6. /home/developer/.rvm/gems/ruby-1.9.3-p429/gems/kramdown-1.2.0/lib
+  7. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/site_ruby/1.9.1
+  8. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/site_ruby/1.9.1/x86_64-linux
+  9. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/site_ruby
+  10. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/vendor_ruby/1.9.1
+  11. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/vendor_ruby/1.9.1/x86_64-linux
+  12. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/vendor_ruby
+  13. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1
+  14. /home/developer/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/x86_64-linux
