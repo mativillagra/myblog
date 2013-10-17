@@ -3,6 +3,13 @@
 # will be considered as binary.
 text_extensions: [ 'coffee', 'css', 'erb', 'haml', 'handlebars', 'hb', 'htm', 'html', 'js', 'less', 'markdown', 'md', 'ms', 'mustache', 'php', 'rb', 'sass', 'scss', 'txt', 'xhtml', 'xml' ]
 
+# I want to deploy using the built-in rsync Rake task
+#http://nanoc.ws/docs/api/Nanoc/Extra/Deployers/Rsync.html
+deploy:
+  default:
+    kind: rsync
+    dst: "tux@23.21.60.146:/srv/www/htdocs"
+
 # The path to the directory where all generated files will be written to. This
 # can be an absolute path starting with a slash, but it can also be path
 # relative to the site directory.
