@@ -9,7 +9,8 @@ deploy:
   default:
     kind: rsync
     dst: "tux@23.21.60.146:/srv/www/htdocs"
-
+    options : [ '-vrhOP', '--delete-after' ]
+ 
 # The path to the directory where all generated files will be written to. This
 # can be an absolute path starting with a slash, but it can also be path
 # relative to the site directory.
